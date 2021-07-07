@@ -1,9 +1,8 @@
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -13,4 +12,64 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.logo-div .logo-img {
+  width: 300rem;
+  cursor: pointer;
+}
+
+.image-container {
+  width: 1.8rem;
+}
+
+.image-container > div {
+  position: unset !important;
+}
+.image-container .image {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
+.product-image-container {
+  /* width: 20rem; */
+  height: 100%;
+}
+
+.product-image-container > div {
+  position: unset !important;
+}
+
+.product-image-container .image {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
+
+.modal-overlay{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgb(205, 209, 206, 0.8);
+  z-index: 100;
+}
+
+.testPortal{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgb(205, 209, 206, 0.8);
+  z-index: 900000;
+  overflow: hidden;
+}
+.hidden{
+  overflow: hidden !important;
 }
