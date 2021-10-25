@@ -70,8 +70,11 @@ const Modal: React.FC<Props> = ({
       });
 
     if (data) {
+      interface IObjectKeys {
+        [key: string]: string | number | undefined;
+      }
 
-      const object = new Object;
+      const object: IObjectKeys = {};
       object[currency] = data.products;
       
       Promise.all([
